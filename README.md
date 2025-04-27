@@ -1,7 +1,3 @@
-Here's a `README.md` template for your Proxer-Max tool:
-
----
-
 # Proxer-Max
 
 Proxer-Max is a tool that changes your IP address every second to provide enhanced privacy and security. It's ideal for maintaining anonymity, bypassing geo-restrictions, and avoiding detection while browsing.
@@ -54,5 +50,3 @@ sudo ./proxermax.sh
 ```
 
 ---
-
-Feel free to modify anything as needed. Let me know if you need further adjustments!
