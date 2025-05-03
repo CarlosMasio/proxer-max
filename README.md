@@ -1,6 +1,6 @@
 # Proxer-Max
 
-Proxer-Max is a tool that changes your IP address every second to provide enhanced privacy and security. It's ideal for maintaining anonymity, bypassing geo-restrictions, and avoiding detection while browsing.
+Proxer-Max is a tool that changes your IP address every 30 seconds using Windscribe VPN, providing enhanced privacy and security. It's ideal for maintaining anonymity, bypassing geo-restrictions, and avoiding detection while browsing.
 
 ## Installation
 
@@ -10,7 +10,7 @@ To install Proxer-Max, follow these steps:
 
    ```bash
    git clone https://github.com/CarlosMasio/proxer-max.git
-   ```
+````
 
 2. Navigate into the project directory:
 
@@ -32,8 +32,8 @@ To install Proxer-Max, follow these steps:
    windscribe login
    ```
 
-   - Username: `proxer_max`
-   - Password: `POXer@0000`
+   * Username: `proxer_max`
+   * Password: `POXer@0000`
 
 2. Grant execution permissions to the script:
 
@@ -41,12 +41,29 @@ To install Proxer-Max, follow these steps:
    chmod +x proxermax.sh
    ```
 
+3. (Optional but recommended) Create a global command alias:
+
+   ```bash
+   sudo ln -sf $(realpath proxermax.sh) /usr/local/bin/proxermax
+   ```
+
+   Now you can run it from anywhere using:
+
+   ```bash
+   sudo proxermax
+   ```
+
 ## Usage
 
-To run Proxer-Max, execute the following command:
+To run Proxer-Max:
 
 ```bash
 sudo ./proxermax.sh
 ```
 
----
+Or, if you created the global alias:
+
+```bash
+sudo proxermax
+```
+
