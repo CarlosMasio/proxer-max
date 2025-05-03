@@ -10,7 +10,6 @@ To install Proxer-Max, follow these steps:
 
    ```bash
    git clone https://github.com/CarlosMasio/proxer-max.git
-````
 
 2. Navigate into the project directory:
 
