@@ -1,18 +1,19 @@
 #!/bin/bash
 
-# Log in to Windscribe if not already logged in
-windscribe login
+# Start Windscribe service
+windscribe start
 
-# Loop to change IP every second
+# Trap Ctrl+C (SIGINT) to disconnect Windscribe
+trap 'echo "Disconnecting Windscribe..."; windscribe disconnect; exit' INT
+
+# Infinite loop to change IP every 30 seconds
 while true; do
-    # Disconnect from Windscribe VPN
+    # Disconnect current session if any
     windscribe disconnect
-    sleep 1  # Wait for 1 second before reconnecting
-    
-    # Connect to Windscribe VPN (you can specify a country or server)
-    windscribe connect
-    sleep 1  # Wait for 1 second after connecting to change IP
 
-    # Optionally, change the server every time (example: random server)
-    # windscribe connect random
+    # Connect to a random location
+    windscribe connect
+
+    # Wait for 30 seconds before changing IP again
+    sleep 30
 done
