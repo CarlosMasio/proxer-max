@@ -2,6 +2,8 @@
 
 Proxer-Max is a tool that changes your IP address every 30 seconds using Windscribe VPN, providing enhanced privacy and security. It's ideal for maintaining anonymity, bypassing geo-restrictions, and avoiding detection while browsing.
 
+![Proxer-Max Banner](Screenshot_2025-05-07_07_26_44.png)
+
 ## Installation
 
 To install Proxer-Max, follow these steps:
